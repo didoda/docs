@@ -185,7 +185,7 @@ You can get the latest offical image build from Docker Hub like this.
 
     $ docker pull bedita/bedita:latest
 
-You may also use ``:5-salix`` tag instead of ``:latest``, they are currently synonyms.
+You may also use ``:6-pinus`` tag instead of ``:latest``, they are currently synonyms.
 Release tags will be available soon.
 
 
