@@ -1,4 +1,4 @@
-BEdita 5 documentation
+BEdita 6 documentation
 ======================
 
 .. BEdita documentation index
