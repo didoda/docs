@@ -142,9 +142,9 @@ In this example we will simply disable the newly created property and change its
 .. sourcecode:: http
 
     PATCH /model/properties/1 HTTP/1.1
-    Content-Type: application/json
-
+    Host: api.example.com
     Accept: application/vnd.api+json
+    Content-Type: application/json
 
     {
         "data": {

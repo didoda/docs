@@ -25,7 +25,7 @@ and an opaque :term:`refresh token` to renew the access token.
 See :doc:`endpoints/auth` endpoint documentation on how you can retrieve the JWT tokens with a standard username and password user authentication.
 Once the token is retrieved it can be used on every request in the ``Authorization`` HTTP header this way:
 
-.. sourcecode:: http
+.. sourcecode:: text
 
     Authorization: Bearer <token>
 
@@ -37,7 +37,7 @@ Through :doc:`endpoints/admin` endpoint it's possible to set and retrieve an API
 
 On each request you may set the application's API KEY using the ``X-Api-Key`` HTTP header
 
-.. sourcecode:: http
+.. sourcecode:: text
 
     X-Api-Key: <api-key>
 
