@@ -5,7 +5,7 @@ Model ``/model``
 
 ``/model`` base endpoint provides a set of methods dedicated to data modeling.
 
-Unlike other endpoints ``/model`` is basically a prefix to the actual endpoints that handle object types, property types, properties, relations and categories. You can see this endpoints collection as the **API Modeling** part of BEdita.
+Unlike other endpoints ``/model`` is basically a prefix to the actual endpoints that handle object types, property types, properties, relations, categories, tags and project model information. You can see this endpoints collection as the **API Modeling** part of BEdita.
 
 Main operations available on these endpoints:
 
@@ -16,6 +16,7 @@ Main operations available on these endpoints:
 * handle object type tags with ``/model/tags``
 * define relations between objects with ``/model/relations``
 * retrieve :term:`JSON SCHEMA` of object types and resources from ``/model/schema``
+* retrieve current project model data from ``/model/project``
 
 .. toctree::
     :caption: Model endpoints reference
@@ -27,6 +28,7 @@ Main operations available on these endpoints:
     tags
     relations
     schema
+    project
 
 .. _api-model-naming:
 

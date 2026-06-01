@@ -28,6 +28,7 @@ Creation of a new object type happens through ``POST /model/object_types`` endpo
                 "name": "cats",
                 "singular": "cat",
                 "description": "This is a cat"
+            }
         }
     }
 
@@ -191,18 +192,47 @@ Response 200 OK is expected.
 
     {
         "data": {
-            "id": 13,
+            "id": "13",
             "type": "object_types",
             "attributes": {
-                "username": "johndoe",
-                "name": "Johnny",
-                "surname": "Doe"
+                "name": "cats",
+                "singular": "cat",
+                "is_abstract": false,
+                "description": "This was a cat",
+                "associations": null,
+                "hidden": null,
+                "enabled": false,
+                "table": "BEdita/Core.Objects",
+                "parent_name": "objects"
             },
             "meta": {
-                ...
+                "created": "2017-11-21T13:56:54+00:00",
+                "modified": "2017-11-21T13:56:54+00:00",
+                "core_type": false,
+                "alias": "Cats",
+                "relations": []
             },
             "relationships": {
-                ...
+                "left_relations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://api.example.com/model/object_types/13/left_relations",
+                        "self": "http://api.example.com/model/object_types/13/relationships/left_relations"
+                    }
+                },
+                "right_relations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://api.example.com/model/object_types/13/right_relations",
+                        "self": "http://api.example.com/model/object_types/13/relationships/right_relations"
+                    }
+                },
+                "parent": {
+                    "links": {
+                        "related": "http://api.example.com/model/object_types/13/parent",
+                        "self": "http://api.example.com/model/object_types/13/relationships/parent"
+                    }
+                }
             }
         },
         "links": {

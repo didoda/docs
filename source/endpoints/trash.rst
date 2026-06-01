@@ -18,53 +18,47 @@ You can obtain trash contents by using ``GET /trash`` and ``GET /trash/(object_i
 
 ``GET /trash`` returns response ``200 OK`` and contents as array, in 'data', as described in following example.
 
-    **Example request**:
+**Example request**:
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /trash HTTP/1.1
-        Host: example.com
-        Accept: application/json, text/javascript
+    GET /trash HTTP/1.1
+    Host: example.com
+    Accept: application/json, text/javascript
 
-    **Example response**:
+**Example response**:
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: application/json
+    HTTP/1.1 200 OK
+    Content-Type: application/json
 
-        {
-            "data": [
-              ....
-            ],
-            ....
-        }
+    {
+        "data": []
+    }
 
 .. http:get:: /trash/(object_id)
 
 ``GET /trash/(object_id)`` returns response ``200 OK`` if content is found, ``404 Not Found`` otherwise.
 
-    **Example request**:
+**Example request**:
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /trash/154 HTTP/1.1
-        Host: example.com
-        Accept: application/json, text/javascript
+    GET /trash/154 HTTP/1.1
+    Host: example.com
+    Accept: application/json, text/javascript
 
-    **Example response**:
+**Example response**:
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: application/json
+    HTTP/1.1 200 OK
+    Content-Type: application/json
 
-        {
-            "data": {
-              ....
-            },
-            ....
-        }
+    {
+        "data": {}
+    }
 
 Restore contents
 ----------------
